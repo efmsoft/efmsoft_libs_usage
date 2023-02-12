@@ -1,2 +1,2 @@
 # efmsoft_libs_usage
-Exmaple of CMAKE project which uses EfmSoft libraries
+Example of CMAKE project which uses EfmSoft libraries
