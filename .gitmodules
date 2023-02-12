@@ -1,0 +1,12 @@
+[submodule "Modules/logme"]
+	path = Modules/logme
+	url = https://github.com/efmsoft/logme.git
+[submodule "Modules/allstat"]
+	path = Modules/allstat
+	url = https://github.com/efmsoft/allstat.git
+[submodule "Modules/utf8"]
+	path = Modules/utf8
+	url = https://github.com/efmsoft/utf8.git
+[submodule "Modules/syncme"]
+	path = Modules/syncme
+	url = https://github.com/efmsoft/syncme.git
