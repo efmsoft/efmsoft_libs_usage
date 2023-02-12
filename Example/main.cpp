@@ -7,6 +7,9 @@ CritSection Lock;
 
 int main()
 {
+  // Do not look for meaning in the code below. 
+  // We just referenced a function from each library
+
   auto guard = Lock.Lock();
 
   utf8::String u8("Hello");
