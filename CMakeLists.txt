@@ -16,14 +16,16 @@ if (${CMAKE_BUILD_TYPE} STREQUAL Debug)
   set_directory_properties(PROPERTIES COMPILE_DEFINITIONS "_DEBUG")
 endif ()
 
-list(APPEND CMAKE_MODULE_PATH Modules/allstat/cmake)
-list(APPEND CMAKE_MODULE_PATH Modules/logme/cmake)
-list(APPEND CMAKE_MODULE_PATH Modules/syncme/cmake)
-list(APPEND CMAKE_MODULE_PATH Modules/utf8/cmake)
+list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/Modules/allstat/cmake)
+list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/Modules/logme/cmake)
+list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/Modules/syncme/cmake)
+list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/Modules/utf8/cmake)
 
 find_package(allstat MODULE)
 find_package(logme MODULE)
 find_package(syncme MODULE)
 find_package(utf8 MODULE)
+
+find_package(OpenSSL REQUIRED)
 
 add_subdirectory(Example)
