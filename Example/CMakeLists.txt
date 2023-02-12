@@ -14,11 +14,13 @@ target_include_directories(example PUBLIC
   ${OPENSSL_INCLUDE_DIR}
 )
 
+# Order of libraries is important on Linux !
+
 target_link_libraries(example LINK_PUBLIC 
-  ${ALLSTAT_LIBRARIES}
-  ${LOGME_LIBRARIES}
   ${SYNCME_LIBRARIES}
   ${UTF8_LIBRARIES}
+  ${LOGME_LIBRARIES}
+  ${ALLSTAT_LIBRARIES}
 
   ${OPENSSL_LIBRARIES}
 )

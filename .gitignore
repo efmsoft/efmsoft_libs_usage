@@ -1,2 +1,5 @@
 .vs/
 out/
+build/
+build/Example/example
+.vscode/
