@@ -21,6 +21,8 @@ list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/Modules/logme/cmake)
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/Modules/syncme/cmake)
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/Modules/utf8/cmake)
 
+# Bind logme to allstat
+# Bind syncme to logme and allstat
 add_compile_definitions(
   USE_ALLSTAT
   USE_LOGME
