@@ -26,6 +26,8 @@ list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/Modules/utf8/cmake)
 add_compile_definitions(
   USE_ALLSTAT
   USE_LOGME
+  _LOGME_STATIC_BUILD_
+  _SINCME_STATIC_BUILD_
 )
 
 find_package(OpenSSL REQUIRED)

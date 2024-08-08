@@ -12,9 +12,10 @@ int main()
 
   auto guard = Lock.Lock();
 
-  utf8::String u8("Hello");
+  utf8::String u8(L"Hello World!");
+
   auto s = AllStat::Errno2Str(1);
-  LogmeI("%s: %s", u8.c_str(), s.c_str());
+  LogmeW("%s: %s", u8.c_str(), s.c_str());
 
   return 0;
 }

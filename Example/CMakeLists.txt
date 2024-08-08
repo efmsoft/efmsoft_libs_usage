@@ -27,4 +27,5 @@ target_link_libraries(example LINK_PUBLIC
 
 if(WIN32)
   target_link_libraries(example LINK_PUBLIC icu.lib)
+  target_link_libraries(example PRIVATE Ws2_32)
 endif()
